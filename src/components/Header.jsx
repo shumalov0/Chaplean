@@ -1,10 +1,15 @@
-
-import React from 'react';
-
+import React from 'react'
+import Nav from './Nav'
 const Header = () => {
   return (
-    <div>Header</div>
-  ) 
+    <>
+    <div className='pt-[60px]'>
+      <Nav/>
+
+    </div>
+
+    </>
+  )
 }
 
-export default Header;
+export default Header

@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "mainColor": "#141526",
-       " blueColor": "#1D9BF0",
+        "blueColor": "#1C9BF1",
         "blueSecond": "#292C3D",
         "whiteColor": "#EEEEEE",
         "grayColor": "#828282",
@@ -28,3 +28,4 @@ module.exports = {
   },
   plugins: [],
 };
+
