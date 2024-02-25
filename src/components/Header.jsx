@@ -5,7 +5,6 @@ const Header = () => {
     <>
     <div className='pt-[60px]'>
       <Nav/>
-
     </div>
 
     </>
