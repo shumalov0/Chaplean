@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "../assets/icons/Logo.svg";
 import { Link } from "react-router-dom";
-import downloadBtn from '../assets/icons/download-icon.svg';
 import topicon from '../assets/icons/top-icon.svg';
+import DownloadButton from "./DownloadButton";
 
 const Footer = () => {
   return (
@@ -39,15 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="right  ">
-         <div className="flex items-center gap-2">
-             <button className="flex items-center gap-1 py-[12px] md:py-[17px] px-[30px] md:px-[50px] rounded-full bg-mainColor ">
-              <a > 
-                <img src={downloadBtn} alt="iconD" />
-              </a>
-              <span className="text-16 font-pop  text-grayColor">Download</span>
-             </button>
-             <p className="text-16 font-pop text-grayColor">Coming soon on all platforms...</p>
-         </div>
+          <DownloadButton/>
          <div className="flex items-center gap-2 pt-3 ">
           <div className="flex items-center gap-1 py-[12px] md:py-[17px] px-[30px] md:px-[50px] rounded-full bg-mainColor max-w-[168.73px] md:max-w-[208.73px] justify-center ">
              <input className="  outline-0 text-16 font-pop  text-grayColor placeholder:text-grayColor bg-mainColor  max-w-[120px] flex items-center justify-center" placeholder="Subcribe"/>

@@ -1,9 +1,12 @@
 
 import React from 'react';
-import style from "./Home.module.css"
+
+import Section1 from './Section1';
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+          <Section1/>
+    </div>
   )
 }
 
