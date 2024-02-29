@@ -45,11 +45,11 @@ const Footer = () => {
              <input className="  outline-0 text-16 font-pop  text-grayColor placeholder:text-grayColor bg-mainColor  max-w-[120px] flex items-center justify-center" placeholder="Subcribe"/>
              <img src={topicon} alt="ticon"/>
           </div>
-             <p className="text-16 font-pop text-grayColor">To stay updated</p>
+             <p className="text-16 font-pop text-grayColor hidden md:block">To stay updated</p>
          </div>
       </div>
     </div>
-    <p className=" text-center text-[10px] font-pop text-grayColor">Privacy & Policy - Cookies</p>
+    <p className=" text-center text-[10px] font-pop text-grayColor pt-5">Privacy & Policy - Cookies</p>
     </footer>
   );
 };

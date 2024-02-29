@@ -1,6 +1,6 @@
 import React from "react";
-import PartnerLogo from '../../assets/picture/logo 1.png'
-import PartnerLogotwo from '../../assets/picture/text logo 1.png'
+import PartnerLogo from '../../assets/icons/text logo 1.svg'
+import PartnerLogotwo from '../../assets/icons/logo 1.svg'
 import downloadBtn from "../../assets/icons/download-icon.svg";
 import Phoneppicture from '../../assets/picture/chaplean-phonepicture.png'
 import './Home.css'
@@ -26,14 +26,14 @@ const Section1 = () => {
             </a>
             <span className="text-16 font-pop  text-grayColor">Download</span>
           </button>
-          <p className="text-16 font-pop text-grayColor">Coming soon...</p>
+          <p className="text-16 font-pop text-grayColor hidden md:block">Coming soon...</p>
         </div>
       </div>
       <div className="colobration  ">
-        <h2 className="py-5 text-whiteColor font-pop">Collaboration Partners</h2>
-        <div className="partnerLogo flex items-center gap-6">
-          <img src={PartnerLogotwo} alt="partner Logo 2" />
+        <h2 className="py-5 text-whiteColor font-pop text-center md:text-start ">Collaboration Partners</h2>
+        <div className="partnerLogo flex justify-center md:justify-start   gap-6">
           <img src={PartnerLogo} alt="partner Logo" />
+          <img src={PartnerLogotwo} alt="partner Logo 2" className=" bg-no-repeat bg-cover" />
         </div>
       </div>
       </div>

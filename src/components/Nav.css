@@ -1,0 +1,8 @@
+.nav-open {
+    overflow: hidden;
+  }
+
+  .mobile {
+    transition: top 0.5s ease; /* Add transition for smooth animation */
+  }
+  

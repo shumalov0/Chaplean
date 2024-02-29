@@ -9,10 +9,10 @@ const DownloadButton = () => {
        <img src={downloadBtn} alt="iconD" />
      </a>
      <span className="text-16 font-pop  text-grayColor">Download</span>
-    </button>
-    <p className="text-16 font-pop text-grayColor">Coming soon on all platforms...</p>
+    </button> 
+    <p className="text-16 font-pop text-grayColor hidden md:block">Coming soon on all platforms...</p>
 </div>
   )
 }
 
-export default DownloadButton
+export default DownloadButton;
