@@ -7,13 +7,14 @@ import iconFour from "../../assets/icons/fourOurDiffrence.svg";
 const OurDifference = () => {
   return (
     <>
-      <section className=" bg-mainColor pt-10">
+      <section className=" bg-mainColor pt-10 ">
         <div className="flex items-center justify-between px-5 ">
           <div className="w-[50%] borders  bg-grayColor "></div>
           <h2 className="text-[19px] md:text-[31px] OurDiff text-center px-3 max-w-[350px]  md:max-w-[250px] text-whiteColor w-full">Our difference</h2>
           <div className="w-[50%] borders bg-grayColor"></div>
         </div>
-        <div className="container mx-auto px-10 flex flex-wrap items-between gap-10 py-10 justify-center ">
+        <div className="container mx-auto px-10 flex flex-col md:flex-row justify-center md:justify-between gap-0 md:gap-10 py-10 ">
+            <div className="top flex   items-center flex-col gap-10 py-5 justify-between ">
             <div className="box  flex max-w-[300px] md:max-w-[500px] justify-between gap-5 ">
                 <div className="img mt-2 flex items-center justify-center h-[70px] md:h-[100px] w-[70px] md:w-[100px] bg-blueColor rounded-full">
                     <img className="w-[50%] md:w-auto " src={iconOne} alt="iconpicture" />
@@ -32,6 +33,8 @@ const OurDifference = () => {
                     <p className=" text-[10px] md:text-[16px] text-grayColor font-pop pt-0 md:pt-2">A feature that lets you listen to music while texting with friends and acquaintances, so you can share the same moment even when you're not together.</p>
                 </div>
             </div>
+            </div>
+            <div className="bottom flex items-center flex-col  gap-10  py-5 justify-between ">
             <div className="box  flex max-w-[300px] md:max-w-[500px] justify-between gap-5 ">
                 <div className="img mt-2 flex items-center justify-center h-[70px] md:h-[100px] w-[70px] md:w-[100px] bg-blueColor rounded-full">
                     <img className="w-[50%] md:w-auto " src={iconThree} alt="iconpicture" />
@@ -50,6 +53,7 @@ const OurDifference = () => {
 sit amet.</h2>
                     <p className=" text-[10px] md:text-[16px] text-grayColor font-pop pt-0 md:pt-2">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque .</p>
                 </div>
+            </div>
             </div>
         </div>
       </section>
