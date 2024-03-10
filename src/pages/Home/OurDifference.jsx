@@ -4,13 +4,10 @@ import iconTwo from "../../assets/icons/twoOurDiffrence.svg";
 import iconThree from "../../assets/icons/threeOurDifreence.svg";
 import iconFour from "../../assets/icons/fourOurDiffrence.svg";
 import { Element } from "react-scroll";
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+
 
 const OurDifference = () => {
-    useEffect (()=>{
-        AOS.init();
-      },[])
+
   return (
     <>
       <Element name="2" className=" bg-mainColor pt-10 ">
@@ -19,7 +16,7 @@ const OurDifference = () => {
           <h2 className="text-[19px] md:text-[31px] OurDiff text-center px-3 max-w-[350px]  md:max-w-[250px] text-whiteColor w-full font-pop ">Our difference</h2>
           <div className="w-[50%] borders bg-grayColor"></div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="3000" className="container mx-auto px-10 flex flex-col lg:flex-row justify-center md:justify-between gap-0  py-10 ">
+        <div  className="container mx-auto px-10 flex flex-col lg:flex-row justify-center md:justify-between gap-0  py-10 ">
             <div className="top flex   items-center flex-col gap-10 py-5 justify-between ">
             <div className="box  flex max-w-[300px] md:max-w-[500px] justify-between gap-5 ">
                 <div className="img mt-2 flex items-center justify-center h-[70px] md:h-[100px] w-[70px] md:w-[100px] bg-blueColor rounded-full">

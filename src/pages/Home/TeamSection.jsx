@@ -2,12 +2,9 @@
     import Qiyas from '../../assets/picture/qiyaspicture.png';
     import emil from '../../assets/picture/emilPicture.png'
     import deafultt from '../../assets/picture/defaultpicture.png';
-    import 'aos/dist/aos.css';
-import AOS from 'aos';
+
     const TeamSection = () => {
-      useEffect  (()=>{
-        AOS.init();
-      },[])
+
         let CompanyUse = [
             {
               id: 1,
@@ -55,7 +52,7 @@ import AOS from 'aos';
             </h2>
             <div className="w-[50%] borders bg-grayColor"></div>
         </div>
-        <div data-aos="zoom-in-up" className="container mx-auto">
+        <div  className="container mx-auto">
         <div className="teamUsers flex items-center gap-8 flex-wrap justify-center  ">
             {
             CompanyUse.map((item,key)=>(

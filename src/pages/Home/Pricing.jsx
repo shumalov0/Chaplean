@@ -3,8 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import PriceCard from "../../components/PriceCard";
 import { Element } from "react-scroll";
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+
 let personalPrice = [
   {
     id: 1,
@@ -165,9 +164,7 @@ let creatorPrice = [
 ];
 
 const Pricing = () => {
-  useEffect (()=>{
-    AOS.init();
-  },[])
+
   return (
     <Element name='3' className="bg-mainColor pt-10 pb-10">
       <div className="flex items-center justify-between px-5 ">
@@ -177,7 +174,7 @@ const Pricing = () => {
         </h2>
         <div className="w-[50%] borders bg-grayColor"></div>
       </div>
-      <div data-aos="zoom-in-down" className="container mx-auto px-10">
+      <div  className="container mx-auto px-10">
         <Tabs className="flex flex-col items-center md:items-start pt-10">
           <div className="flex items-center justify-center w-full">
             <TabList className=" cursor-pointer bg-blueSecond max-w-[300px] rounded-[16px] flex items-center justify-center ">

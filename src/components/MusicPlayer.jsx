@@ -2,18 +2,17 @@ import React, { useState, useRef, useEffect } from 'react';
 import pause from '../assets/icons/pause-icon.svg'
 import play from '../assets/icons/play-icon.svg'
 import Music from '../assets/music/chaplean.mp3'
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+
 
 const MusicPlayer = () => {
-  // State to track if the audio is playing
+
   const [isPlaying, setIsPlaying] = useState(false);
 
-  // Reference to the audio element
+
   const audioRef = useRef(null);
 
 
-  // Function to handle play/pause button click
+
   const togglePlay = () => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -23,18 +22,16 @@ const MusicPlayer = () => {
     setIsPlaying(!isPlaying);
   };
 
-  // Function to handle stop button click
+
   const stop = () => {
     audioRef.current.pause();
     audioRef.current.currentTime = 0;
     setIsPlaying(false);
   };
-  useEffect (()=>{
-    AOS.init();
-  },[])
+
 
   return (
-    <div data-aos="zoom-out-left" className='w-[270px] p-6 flex justify-between items-center bg-blueSecond border-[4px] rounded-[10px] border-blueColor '>
+    <div  className='min-w-[270px] p-6 flex justify-between items-center bg-blueSecond border-[4px] rounded-[10px] border-blueColor '>
 
       <audio ref={audioRef} src={Music} />
       <div className="textplayer flex flex-col">

@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Select from "../../assets/icons/select.svg";
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+
 
 let creator = [
   {
@@ -50,14 +49,13 @@ let personal = [
   },
 ];
 
-const PersonalTabs = () => {
-  useEffect (()=>{
-    AOS.init();
-  },[])
+const 
+PersonalTabs = () => {
+
   return (
     <section className="bg-mainColor">
       <div className="container mx-auto px-10  ">
-        <Tabs className="flex flex-col items-center md:items-start"data-aos="zoom-in-right">
+        <Tabs className="flex flex-col items-center md:items-start">
           <TabList className="cursor-pointer bg-blueSecond max-w-[300px] rounded-[16px] flex items-center justify-center">
             <Tab className="rightSelect px-9 py-5 w-full font-pop text-[20px] font-semibold outline-none text-whiteColor">
               Personal
