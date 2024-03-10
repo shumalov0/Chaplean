@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PartnerLogo from '../../assets/icons/text logo 1.svg'
 import PartnerLogotwo from '../../assets/icons/logo 1.svg'
 import downloadBtn from "../../assets/icons/download-icon.svg";
 import Phoneppicture from '../../assets/picture/chaplean-phonepicture.png'
+import { Element } from "react-scroll";
+
 import './Home.css'
 const Section1 = () => {
+
   return (
-    <section className=" py-5 bg-mainColor px-10 " >
+    <Element name='1' id="/5" className=" py-5 bg-mainColor px-10 " >
       <div className="container mx-auto flex items-center justify-between ">
 
       <div className="left flex flex-col gap-6 max-w-[803px]">
-      <h1 className=" font-pop  text-[20px] md:text-[40px] lg:text-[30px] honeHead font-semibold  ">
-        Don't just listen to music, feel it, make it a part of your life.
+      <h1 className=" font-pop  text-[20px] md:text-[40px]  honeHead font-semibold  ">
+      Melodies for moments, moments for you
       </h1>
       <p className="text-[12px] md:-[16px] max-w-[542px] text-grayColor">
         Don't just listen to music, feel it, make it a part of your life.Don't
@@ -37,12 +40,13 @@ const Section1 = () => {
         </div>
       </div>
       </div>
-      <div className="right max-w-[255px] hidden md:flex">
+      <div className="right max-w-[255px] hidden md:flex" >
          <img src={Phoneppicture} alt="phonePicture" />
       </div>
+
       </div>
 
-    </section>
+    </Element>
   );
 };
 

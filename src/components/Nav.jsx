@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import Logo from "../assets/icons/Logo.svg";
-import { Link } from "react-router-dom";
 import closeNavBar from "../assets/icons/closeNavvar.svg";
 import openNavBar from "../assets/icons/openNavbar.svg";
 import "./Nav.css"; // Import CSS file for styling
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 const Nav = () => {
   const navRef = useRef();
@@ -50,29 +51,42 @@ const Nav = () => {
         <div className="Menu hidden md:block transition-all duration-500 ease-in">
           <ul className="flex items-center gap-2 lg:gap-5  text-whiteColor font-pop font-normal ">
             <li>
-              <Link to="1" className="text-13  lg:text-16 ">
+              <Link activeClass="active"
+            to="1"
+            spy={true}
+            smooth={true}
+            offset={-70} // Adjust this value according to your layout
+            duration={500} className="text-13 cursor-pointer lg:text-16 ">
                 What is Chaplean
               </Link>
             </li>
             <li>
-              <Link to="2" className="text-13  lg:text-16">
+              <Link to="2"
+            spy={true}
+            smooth={true}
+            offset={-70} // Adjust this value according to your layout
+            duration={500}  className="text-13 cursor-pointer lg:text-16">
                 Our difference
               </Link>
             </li>
             <li>
-              <Link to="3" className="text-13  lg:text-16">
+              <Link to="3"
+            spy={true}
+            smooth={true}
+            offset={-70} // Adjust this value according to your layout
+            duration={500}  className="text-13 cursor-pointer  lg:text-16">
                 Pricing
               </Link>
             </li>
-            <li>
-              <Link to="4" className="text-13  lg:text-16">
-                What is Chaplean
-              </Link>
-            </li>
+
             <li>
               <Link
-                to="5"
-                className="text-13 lg:text-16 px-[24px] py-[7px] bg-blueColor rounded-full text-mainColor"
+                to="4"
+                spy={true}
+                smooth={true}
+                offset={-70} // Adjust this value according to your layout
+                duration={500} 
+                className="text-13 lg:text-16 cursor-pointer px-[24px] py-[7px] bg-blueColor rounded-full text-mainColor"
               >
                 Contact Us
               </Link>
@@ -85,7 +99,7 @@ const Nav = () => {
           onClick={() => setOpenButton(!closeButton)}
         >
           {closeButton ? (
-            <img ref={navRef} src={closeNavBar} />
+            <img ref={navRef} src={closeNavBar} className=" mr-2"/>
           ) : (
             <img ref={navRef} src={openNavBar} />
           )}
@@ -103,7 +117,11 @@ const Nav = () => {
           <li>
             <Link
               to="1"
-              className="text-13  lg:text-16"
+              spy={true}
+              smooth={true}
+              offset={-70} // Adjust this value according to your layout
+              duration={500}
+              className="text-13 cursor-pointer lg:text-16"
               onClick={() => setOpenButton(false)}
             >
               What is Chaplean
@@ -112,7 +130,11 @@ const Nav = () => {
           <li>
             <Link
               to="2"
-              className="text-13  lg:text-16"
+              spy={true}
+              smooth={true}
+              offset={-70} // Adjust this value according to your layout
+              duration={500}
+              className="text-13 cursor-pointer lg:text-16"
               onClick={() => setOpenButton(false)}
             >
               Our difference
@@ -121,7 +143,11 @@ const Nav = () => {
           <li>
             <Link
               to="3"
-              className="text-13  lg:text-16"
+              spy={true}
+              smooth={true}
+              offset={-70} // Adjust this value according to your layout
+              duration={500}
+              className="text-13 cursor-pointer lg:text-16"
               onClick={() => setOpenButton(false)}
             >
               Pricing
@@ -130,8 +156,12 @@ const Nav = () => {
           <li></li>
           <li>
             <Link
-              to="5"
-              className="text-13 lg:text-16 px-[24px] py-[7px] bg-blueColor rounded-full text-mainColor"
+               to="4"
+               spy={true}
+               smooth={true}
+               offset={-70} // Adjust this value according to your layout
+               duration={500}
+              className="text-13 lg:text-16 px-[24px] py-[7px] bg-blueColor rounded-full text-mainColor cursor-pointer"
               onClick={() => setOpenButton(false)}
             >
               Contact Us

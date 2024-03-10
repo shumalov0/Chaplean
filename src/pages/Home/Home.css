@@ -3,3 +3,20 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.react-tabs__tab--selected {
+
+background-color:#1C9BF1 !important ;
+color: #fff !important;
+}
+
+
+.leftSelect{
+
+  border-radius: 0px 16px 16px 0px !important;
+
+}
+
+.rightSelect{
+  border-radius: 16px 0px 0px 16px !important ;
+}
+
